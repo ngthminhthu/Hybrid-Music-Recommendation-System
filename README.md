@@ -1,37 +1,15 @@
-Hybrid Music Recommendation System Based on User Listening Behavior
+Recommendation Methods
 
-Project Overview
+The system combines three recommendation approaches:
 
-This project develops a hybrid music recommendation system based on user listening behavior and music interaction data.
+- **Repeat-Listening Recommendation:** Recommends songs based on users' listening behavior and repeat-listening patterns.
+- **User Similarity-Based Recommendation:** Identifies users with similar listening behaviors using Cosine Similarity.
+- **Hybrid Recommendation:** Combines multiple recommendation strategies to provide more personalized music recommendations.
 
-The system analyzes users' listening patterns, repeat listening behavior, and similarities between users to generate personalized music recommendations.
+Evaluation Metrics
 
-Technologies
+The recommendation system is evaluated using:
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- Cosine Similarity
-- Collaborative Filtering
-
- Main Features
-
-- Analyze user listening behavior and music interaction data.
-- Build a User-Item Interaction Matrix.
-- Identify users with similar listening behaviors using Cosine Similarity.
-- Develop a repeat-listening recommendation system.
-- Build a hybrid recommendation system combining multiple recommendation strategies.
-- Evaluate the recommendation system using ROC-AUC, Precision@10, and Catalog Coverage.
-
-Project Structure
-
-```text
-├── 1_data
-│   └── Dataset
-├── 2_code
-│   └── Code_CD2_KHDL.ipynb
-└── 3_report
-    └── Project Report
+- **ROC-AUC:** Evaluates the model's ability to distinguish between relevant and irrelevant recommendations.
+- **Precision@10:** Measures the proportion of relevant songs among the top 10 recommended songs.
+- **Catalog Coverage:** Measures the diversity of songs recommended across the music catalog.
